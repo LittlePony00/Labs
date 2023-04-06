@@ -1,4 +1,4 @@
-package N3;
+package Laba12.N3;
 
 public class Triangle extends Polygon{
     public Triangle(int[] sides) {

@@ -1,4 +1,4 @@
-package N1;
+package Laba12.N1;
 
 public class Car extends Venicle {
 
@@ -35,7 +35,7 @@ public class Car extends Venicle {
 
 
     public String writeInformation() {
-        return String.format("In a N1.Car %d passengers %n" +
+        return String.format("In a Laba12.N1.Car %d passengers %n" +
                 "With %d horse power on %s", this.passengers, this.horsepower, this.model);
     }
 }

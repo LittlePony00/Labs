@@ -1,4 +1,4 @@
-package N3;
+package Laba12.N3;
 
 public class Quadrilateral extends Polygon{
     public Quadrilateral(int[] sides) {

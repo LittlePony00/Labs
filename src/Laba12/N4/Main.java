@@ -1,4 +1,4 @@
-package N4;
+package Laba12.N4;
 
 import java.util.Scanner;
 

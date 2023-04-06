@@ -1,4 +1,4 @@
-package N2;
+package Laba12.N2;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws Exception {

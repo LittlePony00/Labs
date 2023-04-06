@@ -1,4 +1,4 @@
-package N2;
+package Laba12.N2;
 
 public class Worker extends Human{
 

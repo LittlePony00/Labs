@@ -1,4 +1,4 @@
-package N1;
+package Laba12.N1;
 
 public class Boat extends Venicle{
 
@@ -20,6 +20,6 @@ public class Boat extends Venicle{
     }
 
     public String writeInformation (){
-        return String.format("In a N1.Boat %d passengers %nWith %d oars", this.passengers, this.oarscount);
+        return String.format("In a Laba12.N1.Boat %d passengers %nWith %d oars", this.passengers, this.oarscount);
     }
 }

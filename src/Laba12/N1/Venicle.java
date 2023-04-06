@@ -1,4 +1,4 @@
-package N1;
+package Laba12.N1;
 
 public class Venicle {
     protected int passengers;

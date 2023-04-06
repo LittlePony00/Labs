@@ -1,6 +1,4 @@
-package N4;
-
-import java.util.Arrays;
+package Laba12.N4;
 
 public abstract class Hero {
 

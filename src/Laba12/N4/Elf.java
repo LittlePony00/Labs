@@ -1,4 +1,4 @@
-package N4;
+package Laba12.N4;
 
 public class Elf extends Hero {
     private int arrowCounts;

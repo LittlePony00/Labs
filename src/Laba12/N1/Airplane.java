@@ -1,4 +1,4 @@
-package N1;
+package Laba12.N1;
 
 public class Airplane extends Venicle{
     private int wingsCount;
@@ -49,7 +49,7 @@ public class Airplane extends Venicle{
                     With %d wings and\s
                     %d engines""", this.passengers, this.wingsCount, this.engineNumber);
         else
-            return String.format("In an N1.Airplane %d passengers\n" +
+            return String.format("In an Laba12.N1.Airplane %d passengers\n" +
                     "With %d wings and %d engines", this.passengers, this.wingsCount, this.engineNumber);
     }
 }
