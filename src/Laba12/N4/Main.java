@@ -16,7 +16,7 @@ public class Main {
                 s = sc.nextLine();
             }
             System.out.println(hero);
-        }catch (NullPointerException e) {
+        }catch (Exception e) {
             e.printStackTrace();
         }
     }
