@@ -1,4 +1,4 @@
-package Laba13;
+package Laba14;
 
 import java.io.File;
 import java.io.FileReader;
@@ -15,9 +15,9 @@ public class N4 {
     public static void main(String[] args) {
 
         try {
-            FileReader fileReader = new FileReader("C://Users//nikit//IdeaProjects//untitled//src//Laba13//example2.txt");
+            FileReader fileReader = new FileReader("C://Users//nikit//IdeaProjects//untitled//src//Laba14//example2.txt");
             Scanner sc = new Scanner(fileReader);
-            FileWriter fileWriter = new FileWriter("C://Users//nikit//IdeaProjects//untitled//src//Laba13//example2.txt", true);
+            FileWriter fileWriter = new FileWriter("C://Users//nikit//IdeaProjects//untitled//src//Laba14//example2.txt", true);
 
             while (sc.hasNextLine()) {
                 line = sc.nextLine();
@@ -49,7 +49,7 @@ public class N4 {
                 }
             }
 
-            Files.writeString(Paths.get("C://Users//nikit//IdeaProjects//untitled//src//Laba13//example2.txt"), "");
+            Files.writeString(Paths.get("C://Users//nikit//IdeaProjects//untitled//src//Laba14//example2.txt"), "");
             fileWriter.write(new_line);
             fileWriter.close();
 

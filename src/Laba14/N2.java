@@ -1,28 +1,24 @@
-package Laba13;
+package Laba14;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 
-public class N1 {
+public class N2 {
     static String line;
-    static int count = 0;
+    static int count;
     public static void main(String[] args) {
 
         try {
-            FileReader fileReader = new FileReader(new File("C://Users//nikit//IdeaProjects//untitled//src//Laba13//example1.txt"));
+            FileReader fileReader = new FileReader(new File("C://Users//nikit//IdeaProjects//untitled//src//Laba14//example1.txt"));
             Scanner sc = new Scanner(fileReader);
 
             while (sc.hasNextLine()) {
                 line = sc.nextLine();
                 for (int i = 0; i < line.length(); i++) {
-                    if (String.valueOf(line.charAt(i)).equals(".") ||
-                    String.valueOf(line.charAt(i)).equals(")") ||
-                    String.valueOf(line.charAt(i)).equals("(") ||
-                    String.valueOf(line.charAt(i)).equals("–"))
+                    if (Character.isDigit(line.charAt(i)))
                     {
-                        count++;
+                        count += Integer.parseInt(String.valueOf(line.charAt(i)));
                     }
                 }
             }
@@ -34,3 +30,4 @@ public class N1 {
         }
     }
 }
+
