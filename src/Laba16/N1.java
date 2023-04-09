@@ -26,7 +26,10 @@ public class N1 {
                         list.remove(Integer.parseInt(s[1]));
                 }
                 case "insert" -> {
-                    list.add(Integer.parseInt(s[s.length-1]), Integer.parseInt(s[s.length-2]));
+                    if (Integer.parseInt(s[1]) > list.size())
+                        System.out.println("Invalid index, max index = " + (list.size()-1));
+                    else
+                        list.add(Integer.parseInt(s[s.length-1]), Integer.parseInt(s[s.length-2]));
                 }
                 case "shift" ->{
                     if (s[1].equalsIgnoreCase("left")) {
