@@ -17,7 +17,7 @@ public class N2 {
             s += stack.pop();
         }
         stack.pop();
-       return "(" + reverseString(s) + ")";
+       return s;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -25,20 +25,6 @@ public class N2 {
         String[] s  = sc.nextLine().split("");
         List<String> arr = new ArrayList<>();
         String full_line = "";
-        Boolean flag = false;
 
-        Collections.addAll(stack, s);
-        while (stack.size() > 0){
-            String x = stack.pop();
-            if (x.equals(")")) {
-                flag = true;
-                String new_line = getSubOfStack(stack);
-                full_line += new_line;
-                System.out.println(new_line);
-            }
-
-        }
-
-        System.out.println(full_line);
     }
 }

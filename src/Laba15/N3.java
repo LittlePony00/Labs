@@ -5,12 +5,12 @@ import java.util.*;
 public class N3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Stack<String> stack = new Stack<>();
+        Deque<String> stack = new ArrayDeque<>();
         Collections.addAll(stack, sc.nextLine().split(""));
         List<String> last = new ArrayList<>();
 
         while (stack.size() > 0) {
-            String s = stack.pop();
+            String s = stack.pollLast();
             switch (s) {
                 case ")" -> {
                     last.add("(");

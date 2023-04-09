@@ -6,7 +6,7 @@ public class N1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.next());
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
 
         while (n != 0) {
             stack.add(n%2);
@@ -14,7 +14,7 @@ public class N1 {
         }
 
         while (stack.size() > 0) {
-            System.out.print(stack.pop() + "");
+            System.out.print(stack.pollLast() + "");
         }
 
     }

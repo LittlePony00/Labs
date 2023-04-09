@@ -10,7 +10,6 @@ public class N4 {
         Map<String, String> map = new HashMap<>();
         String[] s;
         int count = 0;
-
         while (!(s = sc.nextLine().split("->"))[0].equalsIgnoreCase("search")) {
             map.put(s[0], s[1]);
         }
