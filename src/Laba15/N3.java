@@ -25,11 +25,11 @@ public class N3 {
                     try {
                         if (!last.get(last.size() - 1).equals(s)) {
                             System.out.println("NO");
-                            return;
+                            stack.clear();
                         }
                         last.remove(last.size() - 1);
                     }catch (IndexOutOfBoundsException e){
-                        throw new IndexOutOfBoundsException("The number of brackets isn't even");
+                        throw new IndexOutOfBoundsException("Closing bracket not found or it's a wrong one");
                     }
                 }
             }

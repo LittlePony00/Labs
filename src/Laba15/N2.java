@@ -1,30 +1,21 @@
 package Laba15;
 
 import java.util.*;
-//ЕЩЁ НЕ СДЕЛАНА
+
 public class N2 {
+    public static String line = " ";
 
-    public static String reverseString(String str) {
-        if (str.length() <= 1) {
-            return str;
-        }
-        return reverseString(str.substring(1)) + str.charAt(0);
+    public static boolean find_brackets(String s){
+        if (String.valueOf(s.charAt(0)).equalsIgnoreCase("("))
+            return find_brackets(s.substring(1));
+        else return String.valueOf(s.charAt(0)).equalsIgnoreCase(")");
     }
 
-    public static String getSubOfStack(Stack<String> stack) {
-        String s = "";
-        while (!stack.peek().equals("(")) {
-            s += stack.pop();
-        }
-        stack.pop();
-       return s;
-    }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Stack<String> stack = new Stack<>();
-        String[] s  = sc.nextLine().split("");
-        List<String> arr = new ArrayList<>();
-        String full_line = "";
-
+        Scanner scn = new Scanner(System.in);
+        String s = scn.nextLine();
+        System.out.println(find_brackets(s));
     }
+
+    //(5 - (3+3) - (3+5))
 }
