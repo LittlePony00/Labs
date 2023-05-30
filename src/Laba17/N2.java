@@ -16,10 +16,9 @@ public class N2 {
         }
 
         list.stream().sorted(new PersonComparatorN2()).forEach(s -> System.out.println(
-                s.getAge() + " " + s.getLastName().charAt(0) + "." + s.getName().charAt(0) + ". " + s.getThirdName()
+                s.getAge() + " " + s.getLastName().charAt(0) + "." + s.getName().charAt(0) + ". " + s.getThirdName() + "\n"
         ));
 
-        System.out.println();
 
         list.stream().sorted(new PersonComparatorLastNameFirstN2()).forEach(s -> System.out.println(
                 s.getLastName() + " " + s.getName().charAt(0) + "." + s.getThirdName().charAt(0) + ". " + s.getAge()

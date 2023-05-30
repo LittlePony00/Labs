@@ -8,7 +8,7 @@ public class PersonComparatorN2 implements Comparator<Person> {
         if (o1.getAge() > o2.getAge()) return -1;
         else if (o1.getAge() < o2.getAge()) return 1;
         else if (o1.getAge() == o1.getAge()) {
-            if (Character.compare(o1.getName().charAt(0), o2.getName().charAt(0)) == 0)
+            if (o1.getName().charAt(0) == o2.getName().charAt(0))
                 return Character.compare(o1.getThirdName().charAt(0), o2.getThirdName().charAt(0));
         }
 

@@ -37,7 +37,8 @@ public class N3 {
 
         if (last.size() == 0) System.out.println("YES");
         else throw new IndexOutOfBoundsException("The number of brackets isn't even");
-        }
+    }
+
     }
 
 
